@@ -34,7 +34,8 @@ for(i in seq(1,length(filename),by=1)){
 }
           
   
-
+brfss2015 <- read.xport('/LLCP2017.XPT ')
+          
 # read in the downloaded data files
 brfss2015 <- read.xport('/LLCP2015.XPT ') #after the file extension there seems to be a space... not sure why, but oh well
 dim(brfss2015)
@@ -49,3 +50,24 @@ brfss2011 <- read.xport("/LLCP2011.XPT")
 dim(brfss2011)
 #506467 entries, 454 variables
 #print any missing variables
+
+          
+exercise_vars <- c("EXERANY2", "EXRACT11", "EXEROFT1", "EXERHMM1",
+                   "EXRACT21", "EXEROFT2", "EXERHMM2", "STRENGTH", 
+                   "METVL11_", "METVL21_", "FC60_",
+                   "ACTIN11_", "ACTIN21_", "PADUR1_", "PADUR2_",
+                   "PAFREQ1_", "PAFREQ2_", "X_MINAC11", "X_MINAC21",
+                   "STRFREQ_", "PAMIN11_", "PAMIN21_", "PA1MIN_",
+                   "PAVIG11_", "PAVIG21_", "PA1VIGM_", "X_PACAT1",
+                   "X_PASTRNG", "X_PAREC1", "X_PASTAE1", "MENTHLTH","X_RFBING5")
+          
+missing_var_exercise <- function (data){
+  all_var <- colnames(data)
+  missing <- exercise_vars[which(!exercise_vars %in% all_var)]
+  return (missing)
+}
+          
+missing_var_exercise(brfss2017)
+missing_var_exercise(brfss2015)
+missing_var_exercise(brfss2013)
+missing_var_exercise(brfss2011)
