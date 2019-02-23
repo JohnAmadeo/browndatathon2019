@@ -6,6 +6,7 @@ invisible(lapply(libraries, require, character.only=TRUE))
 
 #call the helperfunctions script to load functions and variables used here
 
+wd <- getwd()
 
 #Download BRFSS data from 2011, 2013 and 2015
 link <- c("http://www.cdc.gov/brfss/annual_data/2017/files/LLCP2017XPT.zip", 
