@@ -33,20 +33,20 @@ for(i in seq(1,length(filename),by=1)){
   }
 }
           
-  
-brfss2015 <- read.xport('/LLCP2017.XPT ')
-          
+brfss2017 <- read.xport('LLCP2017.XPT ') #after the file extension there seems to be a space... not sure why, but oh well
+dim(brfss2017)
+
 # read in the downloaded data files
-brfss2015 <- read.xport('/LLCP2015.XPT ') #after the file extension there seems to be a space... not sure why, but oh well
+brfss2015 <- read.xport('LLCP2015.XPT ') #after the file extension there seems to be a space... not sure why, but oh well
 dim(brfss2015)
  #just print if any exercise variables are missing
 #441456 entries, 330 variables
 
-brfss2013 <- read.xport("/LLCP2013.XPT") 
+brfss2013 <- read.xport("LLCP2013.XPT") 
 #491773 entries, 336 variables
 #again print to check if any variables are missing
 
-brfss2011 <- read.xport("/LLCP2011.XPT")
+brfss2011 <- read.xport("LLCP2011.XPT")
 dim(brfss2011)
 #506467 entries, 454 variables
 #print any missing variables
