@@ -19,8 +19,8 @@ link <- c("http://www.cdc.gov/brfss/annual_data/2017/files/LLCP2017XPT.zip",
   download.file(url = link, destfile = path, method = "wget")
   unzip(path, exdir = wd)
   extract_name <- unzip(path,list =TRUE)[1,1]
-  remove_code <- paste ("rm", "-rf", path, sep = " ")
-  system(remove_code)
+  #remove_code <- paste ("rm", "-rf", path, sep = " ")
+  #system(remove_code)
    #get the file name
   return (extract_name)
 }
