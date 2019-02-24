@@ -4,7 +4,7 @@ import statesJson from './states.json';
 import styled, { css } from 'styled-components';
 import set from './utils';
 
-export default class Map extends React.Component {
+export default class StaticMap extends React.Component {
   state = {
     isActive: statesJson.states.map(_ => false),
   }
@@ -14,23 +14,11 @@ export default class Map extends React.Component {
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 959, 593">
         {statesJson.states.map((state, idx) => (
           <Path
-            active={this.state.isActive[idx]}
-            color={this.props.colors[state.name] || '#0084FF'}
+            active={this.props.highlighted.has(state.name) ? true : false}
             d={state.d}
             name={state.name}
             key={idx}
-            onMouseOver={() => {
-              this.setState({ 
-                isActive: set(this.state.isActive, idx, true) 
-              });
-              this.props.onMouseOverState(state.name);
-            }}
-            onMouseOut={() => {
-              this.setState({ 
-                isActive: set(this.state.isActive, idx, false) 
-              });
-              this.props.onMouseOutState(state.name);
-            }}
+            onClick={() => this.props.onClick(state.name)}
           />
         ))}
       </svg>
@@ -41,19 +29,17 @@ export default class Map extends React.Component {
 const Path = styled.path`
   stroke: #FFF;
   stroke-width: 1;
-  fill: ${props => props.color};
+  fill: #BBB;
   ${props => props.active && css`
-    fill: #BBB;
+    fill: #0084FF;
   `}
 `;
 
-Map.propTypes = {
+StaticMap.propTypes = {
   colors: PropTypes.shape({
     stateName: PropTypes.string,
     color: PropTypes.string,
   }),
   disabled: PropTypes.arrayOf(PropTypes.string).isRequired,
   onClick: PropTypes.func.isRequired,
-  onMouseOverState: PropTypes.func.isRequired,
-  onMouseOutState: PropTypes.func.isRequired,
 };

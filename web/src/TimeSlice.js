@@ -21,6 +21,7 @@ class TimeSlice extends Component {
     // TODO: Hardcoding dataset min/max in component! This is bad :(
     minScore: 0,
     maxScore: 8,
+    monthLabels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
   }
 
   render() {
@@ -29,15 +30,19 @@ class TimeSlice extends Component {
     for (let state of Object.keys(stateScores)) {
       colors[state] = this.state.colorPalette[Math.floor(stateScores[state])];
     }
-    console.log(colors);
+    
 
     return (
       <div className="App">
+        <Title>Monthly Changes in Number of Days with Poor Mental Health Across States</Title>
         <Panel>
-          <div>
-            {`${this.state.stateName} / ${this.state.month}`}
-          </div>
-          {stateScores[this.state.stateName]}
+          <PanelLabel>
+            {this.state.stateName} <PanelLabelMin> in </PanelLabelMin> {this.state.monthLabels[this.state.month]}
+          </PanelLabel>
+          <PanelScore>
+            {Number(stateScores[this.state.stateName]).toFixed(2)} days
+          </PanelScore>
+          <PanelDescription>Average reported number of days with mental health issues varied by month, which is likely to be associated with major events in the state</PanelDescription>
         </Panel>
 
         <MapContainer>
@@ -63,43 +68,80 @@ class TimeSlice extends Component {
   }
 }
 
+const Title = styled.div`
+  font-family: 'Lato', serif;
+  font-weight: 700;
+  font-size: 24px;
+  box-shadow: 4px 13px 27px -5px rgba(50,50,93,.25), 4px 8px 16px -8px rgba(0,0,0,.3), 4px -6px 16px -6px rgba(0,0,0,.025);
+  margin: 24px auto;
+  padding: 18px;
+  width: 75%;
+`;
 
 const Panel = styled.div`
   background: white;
   box-shadow: 4px 13px 27px -5px rgba(50,50,93,.25), 4px 8px 16px -8px rgba(0,0,0,.3), 4px -6px 16px -6px rgba(0,0,0,.025);
   font-family: 'Lato', serif;
   font-weight: 700;
-  height: 450px;
-  padding: 18px;
+  height: 280px;
   position: fixed;
-  right: 3%;
+  right: 8%;
   text-align: left;
-  top: 60px;
+  top: 200px;
   width: 300px;
 `;
 
+const PanelLabel = styled.div`
+  font-size: 24px;
+  padding: 18px;
+  text-align: center;
+`;
+
+const PanelLabelMin = styled.span`
+  font-size: 14px;
+`;
+
+const PanelLabelDate = styled.span`
+  color: #0084FF;
+`;
+
+const PanelScore = styled.div`
+  font-size: 36px;
+  padding: 8px 12px;
+  text-align: center;
+`;
+
+const PanelDescription = styled.div`
+  background: #000;
+  bottom: 0;
+  color: #FFF;
+  padding: 18px;
+  position: absolute;
+`;
+
 const MapContainer = styled.div`
-  margin: 0 3%;
-  width: 70%;
+  margin: 0 8%;
+  width: 55%;
 `;
 
 const SliderStartLabel = styled.div`
   position: absolute;
   left: 0;
+  top: 0;
   transform: translate(-50%, -50%);
 `;
 
 const SliderEndLabel = styled.div`
   position: absolute;
   right: 0;
+  top: 0;
   transform: translate(50%, -50%);
 `;
 
 const SliderContainer = styled.div`
-  display: flex;
   margin: 0 auto;
   position: relative;
-  width: 70%;
+  width: 60%;
 `;
 
 export default TimeSlice;

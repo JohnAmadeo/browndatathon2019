@@ -31,19 +31,19 @@ const Ul = styled.ul`
 
 const Li = styled.li`
   background: white;
-  border: 1px solid midnightblue;
+  border: 1px solid #0084FF;
   border-radius: 18px;
-  color: midnightblue;
+  color: #0084FF;
   cursor: pointer;
   display: inline-block;
   margin: 8px 8px 8px 0;
   padding: 6px 16px 6px 16px;
   ${props => props.selected && css`
-    background: midnightblue;
+    background: #0084FF;
     color: white;
   `}
   &:hover {
-    border: 2px solid midnightblue;
+    border: 2px solid #0084FF;
     padding: 5px 15px 5px 15px;
   }
 `;

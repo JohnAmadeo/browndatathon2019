@@ -5,22 +5,24 @@ import styled from 'styled-components';
 import Chips from './Chips';
 import Top3Criteria from './Top3Criteria';
 import TimeSlice from './TimeSlice';
+import CaseStudies from './CaseStudies';
 
 class App extends Component {
   state = {
-    pageIdx: 1,
-    pages: [<Top3Criteria/>, <TimeSlice/>, <></>],
+    pageIdx: 2,
+    pages: [<Top3Criteria/>, <TimeSlice/>, <CaseStudies />],
   }
 
   render() {
-
     return (
-      <div className="App">
-        <Chips
-          items={['Top 3 Criteria', 'Time Slice', 'Case Studies - Hurricane']}
-          onClick={pageIdx => this.setState({ pageIdx })}
-          selectedItemId={this.state.pageIdx}
-        />
+      <div className="App" style={{overflowX: 'hidden'}}>
+        <ChipsContainer>
+          <Chips
+            items={['Top 3 Criteria', 'Time Slice', 'Case Studies - Hurricane']}
+            onClick={pageIdx => this.setState({ pageIdx })}
+            selectedItemId={this.state.pageIdx}
+          />
+        </ChipsContainer>
         {this.state.pages[this.state.pageIdx]}
       </div>
     );
@@ -42,28 +44,10 @@ const Panel = styled.div`
   width: 300px;
 `;
 
-const MapContainer = styled.div`
-  margin: 0 3%;
-  width: 70%;
-`;
-
-const SliderStartLabel = styled.div`
-  position: absolute;
-  left: 0;
-  transform: translate(-50%, -50%);
-`;
-
-const SliderEndLabel = styled.div`
-  position: absolute;
-  right: 0;
-  transform: translate(50%, -50%);
-`;
-
-const SliderContainer = styled.div`
-  display: flex;
-  margin: 0 auto;
-  position: relative;
-  width: 70%;
+const ChipsContainer = styled.div`
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
 `;
 
 export default App;
