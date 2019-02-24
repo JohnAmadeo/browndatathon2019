@@ -33,15 +33,15 @@ class CaseStudies extends Component {
   render() {
     return (
       <div>
-        <Title>Case Studies: Effect of Natural Disasters on Mental Health</Title>
+        <Title>Case Studies: Disproportionate Mental Health Effects of Natural Disasters on Vulnerable Groups</Title>
         {this.state.showFloridaModal && (
           <Panel>
-            <img src={snowstorm} alt={'snowstorm'}/>
+            <img src={hurricane} alt={'hurricane'} />
           </Panel>
         )}
         {this.state.showNortheastModal && (
           <Panel>
-            <img src={hurricane} alt={'hurricane'} />
+            <img src={snowstorm} alt={'snowstorm'} />
           </Panel>
         )}
 
@@ -62,9 +62,9 @@ const Title = styled.div`
   font-weight: 700;
   font-size: 24px;
   box-shadow: 4px 13px 27px -5px rgba(50,50,93,.25), 4px 8px 16px -8px rgba(0,0,0,.3), 4px -6px 16px -6px rgba(0,0,0,.025);
-  margin: 24px auto;
-  padding: 18px;
-  width: 75%;
+  margin: 20px auto;
+  padding: 14px;
+  width: 60%;
 `;
 
 const Navbar = styled.div`
@@ -94,6 +94,7 @@ const Panel = styled.div`
   height: 480px;
   left: 50%;
   transform: translateX(-50%);
+  // overflow: scroll;
 
   img {
     width: 100%;

@@ -42,8 +42,8 @@ const Title = styled.div`
   font-weight: 700;
   font-size: 24px;
   box-shadow: 4px 13px 27px -5px rgba(50,50,93,.25), 4px 8px 16px -8px rgba(0,0,0,.3), 4px -6px 16px -6px rgba(0,0,0,.025);
-  margin: 24px auto;
-  padding: 18px;
+  margin: 20px auto;
+  padding: 14px;
   width: 75%;
 `;
 

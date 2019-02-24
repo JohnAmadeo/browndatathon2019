@@ -31,7 +31,7 @@ const Path = styled.path`
   stroke-width: 1;
   fill: #BBB;
   ${props => props.active && css`
-    fill: #0084FF;
+    fill: #00A1FF;
   `}
 `;
 

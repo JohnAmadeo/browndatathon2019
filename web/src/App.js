@@ -9,8 +9,8 @@ import CaseStudies from './CaseStudies';
 
 class App extends Component {
   state = {
-    pageIdx: 2,
-    pages: [<Top3Criteria/>, <TimeSlice/>, <CaseStudies />],
+    pageIdx: 0,
+    pages: [<Top3Criteria />, <CaseStudies />, <TimeSlice/>],
   }
 
   render() {
@@ -18,7 +18,7 @@ class App extends Component {
       <div className="App" style={{overflowX: 'hidden'}}>
         <ChipsContainer>
           <Chips
-            items={['Top 3 Criteria', 'Time Slice', 'Case Studies - Hurricane']}
+            items={['Risk Factors', 'Case Studies', 'Time Slice']}
             onClick={pageIdx => this.setState({ pageIdx })}
             selectedItemId={this.state.pageIdx}
           />
