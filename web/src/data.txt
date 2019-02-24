@@ -1,0 +1,156 @@
+Alabama
+      race6 not_married        poor 
+   6.103910    4.437460    4.073287 
+Alaska
+not_married    PHYSHLTH       race3 
+   5.378255    2.913577    1.136408 
+Arizona
+not_married        poor       race5 
+   4.978481    4.242687    3.553760 
+Arkansas
+       poor not_married    PHYSHLTH 
+   7.946342    3.419890    2.884172 
+California
+not_married        poor    PHYSHLTH 
+   5.837986    3.594757    2.872362 
+Colorado
+not_married        poor    PHYSHLTH 
+   5.468352    5.196783    2.877599 
+Connecticut
+       poor       race6 not_married 
+   8.485703    4.505366    4.347668 
+Delaware
+not_married    PHYSHLTH        <NA> 
+   4.326447    2.900907          NA 
+District of Columbia
+      race6 not_married       race2 
+   6.524445    3.703974    3.569375 
+Florida
+(Intercept) not_married        poor 
+  35.056618    4.439183    4.088456 
+Georgia
+not_married    PHYSHLTH       race3 
+   4.471331    2.904234    1.418490 
+Hawaii
+not_married       race5       race6 
+   3.951067    3.787537    3.787435 
+Idaho
+not_married    PHYSHLTH        <NA> 
+   4.801548    2.896629          NA 
+Illinois
+not_married (Intercept)    PHYSHLTH 
+   5.428452    4.966601    2.890675 
+Indiana
+not_married       race6        poor 
+   5.198624    4.564512    4.539411 
+Iowa
+       poor not_married    PHYSHLTH 
+   6.237576    5.967175    2.908880 
+Kansas
+not_married        poor    PHYSHLTH 
+   5.375858    4.540340    2.897550 
+Kentucky
+not_married        poor    PHYSHLTH 
+   3.895521    3.721216    2.874070 
+Louisiana
+not_married       race6        poor 
+   5.842765    5.203976    3.958773 
+Maine
+      race6        poor not_married 
+   7.106987    5.761935    5.302314 
+Maryland
+not_married        poor    PHYSHLTH 
+   4.876788    4.053557    2.893164 
+Massachusetts
+not_married    PHYSHLTH       race3 
+   4.691336    2.882809    1.864918 
+Michigan
+       poor not_married    PHYSHLTH 
+   5.542239    4.772687    2.873556 
+Minnesota
+      race6        poor not_married 
+   7.030778    5.851994    5.681077 
+Mississippi
+not_college        poor not_married 
+ 791.987119    5.145173    4.075807 
+Missouri
+not_married        poor    PHYSHLTH 
+   5.949587    4.449141    2.884296 
+Montana
+not_married    PHYSHLTH        <NA> 
+   5.136554    2.880474          NA 
+Nebraska
+not_married        poor    PHYSHLTH 
+   5.614816    4.800856    2.898280 
+Nevada
+not_married    PHYSHLTH        <NA> 
+   4.963446    2.885516          NA 
+New Hampshire
+not_married    PHYSHLTH        <NA> 
+   4.710514    2.918355          NA 
+New Jersey
+not_married    PHYSHLTH       race3 
+   4.627739    2.884917    1.910571 
+New Mexico
+not_married    PHYSHLTH        <NA> 
+   4.579993    2.881418          NA 
+New York
+not_married        poor    PHYSHLTH 
+   4.797314    4.026351    2.887525 
+North Carolina
+not_married    PHYSHLTH        <NA> 
+   5.108569    2.883418          NA 
+North Dakota
+not_married       race4    PHYSHLTH 
+   5.514847    4.925309    2.891422 
+Ohio
+       poor not_married    PHYSHLTH 
+   5.307735    4.753995    2.876980 
+Oklahoma
+       poor not_married    PHYSHLTH 
+   5.599817    4.326238    2.860687 
+Oregon
+(Intercept)        poor not_married 
+ 381.903643    6.946037    5.675805 
+Pennsylvania
+      race6 not_married        poor 
+   5.366841    5.048883    4.365549 
+Rhode Island
+       poor not_married    PHYSHLTH 
+   5.870130    4.016162    2.884271 
+South Carolina
+not_college       race6        poor 
+1047.929126    5.666654    4.507354 
+South Dakota
+      race6 not_married    PHYSHLTH 
+   8.938731    3.932885    2.890890 
+Tennessee
+not_married    PHYSHLTH        <NA> 
+   4.581835    2.894456          NA 
+Texas
+      race6 not_married    PHYSHLTH 
+   5.363496    4.755810    2.894695 
+Utah
+not_married    PHYSHLTH        <NA> 
+   4.841391    2.870966          NA 
+Vermont
+       poor not_married    PHYSHLTH 
+   5.965213    4.986219    2.893981 
+Virginia
+not_married       race6    PHYSHLTH 
+   5.451357    4.871693    2.891461 
+Washington
+       poor not_married       race6 
+   5.298635    5.100079    3.693746 
+West Virginia
+       poor not_married    PHYSHLTH 
+   6.281753    3.880337    2.867348 
+Wisconsin
+      race4 not_married       race5 
+   5.867305    5.301034    4.833745 
+Wyoming
+       poor not_married    PHYSHLTH 
+   6.685637    4.452332    2.887590 
+Guam
+not_married    PHYSHLTH        <NA> 
+   4.067142    2.890931          NA

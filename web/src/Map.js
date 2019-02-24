@@ -11,25 +11,25 @@ export default class Map extends React.Component {
 
   render() {
     return (
-      <svg xmlns="http://www.w3.org/2000/svg" width="959" height="593">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0, 0, 959, 593">
         {statesJson.states.map((state, idx) => (
           <Path
             active={this.state.isActive[idx]}
-            color={this.props.colors[state.id] || '#0084FF'}
+            color={this.props.colors[state.name] || '#0084FF'}
             d={state.d}
-            id={state.id}
+            name={state.name}
             key={idx}
             onMouseOver={() => {
               this.setState({ 
                 isActive: set(this.state.isActive, idx, true) 
               });
-              this.props.onMouseOverState(state.id);
+              this.props.onMouseOverState(state.name);
             }}
             onMouseOut={() => {
               this.setState({ 
                 isActive: set(this.state.isActive, idx, false) 
               });
-              this.props.onMouseOutState(state.id);
+              this.props.onMouseOutState(state.name);
             }}
           />
         ))}
@@ -49,7 +49,7 @@ const Path = styled.path`
 
 Map.propTypes = {
   colors: PropTypes.shape({
-    stateId: PropTypes.string,
+    stateName: PropTypes.string,
     color: PropTypes.string,
   }),
   onMouseOverState: PropTypes.func.isRequired,

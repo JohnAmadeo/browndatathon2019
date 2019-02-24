@@ -1,0 +1,678 @@
+{
+  "Missouri": [
+    {
+      "value": "5.949587",
+      "label": "Not Married"
+    },
+    {
+      "value": "4.449141",
+      "label": "Poor"
+    },
+    {
+      "value": "2.884296",
+      "label": "Physical Health"
+    }
+  ],
+  "Ohio": [
+    {
+      "value": "5.307735",
+      "label": "Poor"
+    },
+    {
+      "value": "4.753995",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.876980",
+      "label": "Physical Health"
+    }
+  ],
+  "New Jersey": [
+    {
+      "value": "4.627739",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.884917",
+      "label": "Physical Health"
+    },
+    {
+      "value": "1.910571",
+      "label": "Asian"
+    }
+  ],
+  "Minnesota": [
+    {
+      "value":"7.030778",
+         "label": "Other Race"
+    },
+    {
+      "value": "5.851994",
+      "label": "Poor"
+    },
+    {
+      "value": "5.681077",
+      "label": "Not Married"
+    }
+  ],
+  "Pennsylvania": [
+    {
+      "value": "5.366841",
+      "label":"Other Race"
+    },
+    {
+      "value": "5.048883",
+      "label": "Not Married"
+    },
+    {
+      "value": "4.365549",
+      "label": "Poor"
+    }
+  ],
+  "Delaware": [
+    {
+      "value": "4.326447",
+      "label":"Not Married"
+    },
+    {
+      "value": "2.900907",
+      "label": "Physical Health"
+    }
+  ],
+  "Maryland": [
+    {
+      "value": "4.876788",
+      "label": "Not Married"
+    },
+    {
+      "value":"4.053557",
+      "label": "Poor"
+    },
+    {
+      "value": "2.893164",
+      "label": "Physical Health"
+    }
+  ],
+  "Mississippi": [
+    {
+      "value": "791.987119",
+      "label": "Did not go to college"
+    },
+    {
+      "value":"5.145173",
+      "label": "Poor"
+    },
+    {
+      "value": "4.075807",
+      "label": "Not Married"
+    }
+  ],
+  "Alaska": [
+    {
+      "value": "5.378255",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.913577",
+      "label": "Physical Health"
+    },
+    {
+      "value": "1.136408",
+      "label": "Asian"
+    }
+  ],
+  "California": [
+    {
+      "value": "5.837986",
+      "label": "Not Married"
+    },
+    {
+      "value": "3.594757",
+      "label":"Poor"
+    },
+    {
+      "value": "2.872362",
+      "label": "Physical Health"
+    }
+  ],
+  "Wisconsin": [
+    {
+      "value": "5.867305",
+      "label": "Native American"
+    },
+    {
+      "value": "5.301034",
+      "label":"Not Married"
+    },
+    {
+      "value": "4.833745",
+      "label": "Hispanic"
+    }
+  ],
+  "Kansas": [
+    {
+      "value": "5.375858",
+      "label": "Not Married"
+    },
+    {
+      "value": "4.540340",
+      "label": "Poor"
+    },
+    {
+      "value":"2.897550",
+         "label": "Physical Health"
+    }
+  ],
+  "Hawaii": [
+    {
+      "value": "3.951067",
+      "label": "Not Married"
+    },
+    {
+      "value": "3.787537",
+      "label": "Hispanic"
+    },
+    {
+      "value": "3.787435",
+      "label": "Other Race"
+    }
+  ],
+  "North Dakota": [
+    {
+      "value": "5.514847",
+      "label": "Not Married"
+    },
+    {
+      "value": "4.925309",
+      "label": "Native American"
+    },
+    {
+      "value": "2.891422",
+      "label": "Physical Health"
+    }
+  ],
+  "Washington": [
+    {
+      "value": "5.298635",
+      "label": "Poor"
+    },
+    {
+      "value": "5.100079",
+      "label": "Not Married"
+    },
+    {
+      "value": "3.693746",
+      "label": "Other Race"
+    }
+  ],
+  "Alabama": [
+    {
+      "value": "6.103910",
+      "label": "Other Race"
+    },
+    {
+      "value": "4.437460",
+      "label": "Not Married"
+    },
+    {
+      "value": "4.073287",
+      "label": "Poor"
+    }
+  ],
+  "Indiana": [
+    {
+      "value": "5.198624",
+      "label": "Not Married"
+    },
+    {
+      "value": "4.564512",
+      "label": "Other Race"
+    },
+    {
+      "value": "4.539411",
+      "label": "Poor"
+    }
+  ],
+  "Rhode Island": [
+    {
+      "value": "5.870130",
+      "label": "Poor"
+    },
+    {
+      "value": "4.016162",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.884271",
+      "label": "Physical Health"
+    }
+  ],
+  "New Mexico": [
+    {
+      "value": "4.579993",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.881418",
+      "label": "Physical Health"
+    }
+  ],
+  "New Hampshire": [
+    {
+      "value": "4.710514",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.918355",
+      "label": "Physical Health"
+    }
+  ],
+  "New York": [
+    {
+      "value": "4.797314",
+      "label": "Not Married"
+    },
+    {
+      "value": "4.026351",
+      "label": "Poor"
+    },
+    {
+      "value": "2.887525",
+      "label": "Physical Health"
+    }
+  ],
+  "Louisiana": [
+    {
+      "value": "5.842765",
+      "label": "Not Married"
+    },
+    {
+      "value": "5.203976",
+      "label": "Other Race"
+    },
+    {
+      "value": "3.958773",
+      "label": "Poor"
+    }
+  ],
+  "South Carolina": [
+    {
+      "value": "1047.929126",
+      "label": "Did not go to college"
+    },
+    {
+      "value": "5.666654",
+      "label": "Other Race"
+    },
+    {
+      "value": "4.507354",
+      "label": "Poor"
+    }
+  ],
+  "Michigan": [
+    {
+      "value": "5.542239",
+      "label": "Poor"
+    },
+    {
+      "value": "4.772687",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.873556",
+      "label": "Physical Health"
+    }
+  ],
+  "Massachusetts": [
+    {
+      "value": "4.691336",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.882809",
+      "label": "Physical Health"
+    },
+    {
+      "value": "1.864918",
+      "label": "Asian"
+    }
+  ],
+  "Connecticut": [
+    {
+      "value": "8.485703",
+      "label": "Poor"
+    },
+    {
+      "value": "4.505366",
+      "label": "Other Race"
+    },
+    {
+      "value": "4.347668",
+      "label": "Not Married"
+    }
+  ],
+  "North Carolina": [
+    {
+      "value": "5.108569",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.883418",
+      "label": "Physical Health"
+    }
+  ],
+  "Idaho": [
+    {
+      "value": "4.801548",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.896629",
+      "label": "Physical Health"
+    }
+  ],
+  "Oregon": [
+    {
+      "value": "6.946037",
+      "label": "Poor"
+    },
+    {
+      "value": "5.675805",
+      "label": "Not Married"
+    }
+  ],
+  "Kentucky": [
+    {
+      "value": "3.895521",
+      "label": "Not Married"
+    },
+    {
+      "value": "3.721216",
+      "label": "Poor"
+    },
+    {
+      "value": "2.874070",
+      "label": "Physical Health"
+    }
+  ],
+  "Colorado": [
+    {
+      "value": "5.468352",
+      "label": "Not Married"
+    },
+    {
+      "value": "5.196783",
+      "label": "Poor"
+    },
+    {
+      "value": "2.877599",
+      "label": "Physical Health"
+    }
+  ],
+  "Florida": [
+    {
+      "value": "4.439183",
+      "label": "Not Married"
+    },
+    {
+      "value": "4.088456",
+      "label": "Poor"
+    }
+  ],
+  "Maine": [
+    {
+      "value": "7.106987",
+      "label": "Other Race"
+    },
+    {
+      "value": "5.761935",
+      "label": "Poor"
+    },
+    {
+      "value": "5.302314",
+      "label": "Not Married"
+    }
+  ],
+  "Texas": [
+    {
+      "value": "5.363496",
+      "label": "Other Race"
+    },
+    {
+      "value": "4.755810",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.894695",
+      "label": "Physical Health"
+    }
+  ],
+  "Vermont": [
+    {
+      "value": "5.965213",
+      "label": "Poor"
+    },
+    {
+      "value": "4.986219",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.893981",
+      "label": "Physical Health"
+    }
+  ],
+  "Georgia": [
+    {
+      "value": "4.471331",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.904234",
+      "label": "Physical Health"
+    },
+    {
+      "value": "1.418490",
+      "label": "Asian"
+    }
+  ],
+  "Arizona": [
+    {
+      "value": "4.978481",
+      "label": "Not Married"
+    },
+    {
+      "value": "4.242687",
+      "label": "Poor"
+    },
+    {
+      "value": "3.553760",
+      "label": "Hispanic"
+    }
+  ],
+  "District of Columbia": [
+    {
+      "value": "6.524445",
+      "label": "Other Race"
+    },
+    {
+      "value": "3.703974",
+      "label": "Not Married"
+    },
+    {
+      "value": "3.569375",
+      "label": "African American"
+    }
+  ],
+  "Virginia": [
+    {
+      "value": "5.451357",
+      "label": "Not Married"
+    },
+    {
+      "value": "4.871693",
+      "label": "Other Race"
+    },
+    {
+      "value": "2.891461",
+      "label": "Physical Health"
+    }
+  ],
+  "Montana": [
+    {
+      "value": "5.136554",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.880474",
+      "label": "Physical Health"
+    }
+  ],
+  "Oklahoma": [
+    {
+      "value": "5.599817",
+      "label": "Poor"
+    },
+    {
+      "value": "4.326238",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.860687",
+      "label": "Physical Health"
+    }
+  ],
+  "Utah": [
+    {
+      "value": "4.841391",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.870966",
+      "label": "Physical Health"
+    }
+  ],
+  "Nevada": [
+    {
+      "value": "4.963446",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.885516",
+      "label": "Physical Health"
+    }
+  ],
+  "Iowa": [
+    {
+      "value": "6.237576",
+      "label": "Poor"
+    },
+    {
+      "value": "5.967175",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.908880",
+      "label": "Physical Health"
+    }
+  ],
+  "Guam": [
+    {
+      "value": "4.067142",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.890931",
+      "label": "Physical Health"
+    }
+  ],
+  "South Dakota": [
+    {
+      "value": "8.938731",
+      "label": "Other Race"
+    },
+    {
+      "value": "3.932885",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.890890",
+      "label": "Physical Health"
+    }
+  ],
+  "West Virginia": [
+    {
+      "value": "6.281753",
+      "label": "Poor"
+    },
+    {
+      "value": "3.880337",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.867348",
+      "label": "Physical Health"
+    }
+  ],
+  "Illinois": [
+    {
+      "value": "5.428452",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.890675",
+      "label": "Physical Health"
+    }
+  ],
+  "Wyoming": [
+    {
+      "value": "6.685637",
+      "label": "Poor"
+    },
+    {
+      "value": "4.452332",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.887590",
+      "label": "Physical Health"
+    }
+  ],
+  "Nebraska": [
+    {
+      "value": "5.614816",
+      "label": "Not Married"
+    },
+    {
+      "value": "4.800856",
+      "label": "Poor"
+    },
+    {
+      "value": "2.898280",
+      "label": "Physical Health"
+    }
+  ],
+  "Arkansas": [
+    {
+      "value": "7.946342",
+      "label": "Poor"
+    },
+    {
+      "value": "3.419890",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.884172",
+      "label": "Physical Health"
+    }
+  ],
+  "Tennessee": [
+    {
+      "value": "4.581835",
+      "label": "Not Married"
+    },
+    {
+      "value": "2.894456",
+      "label": "Physical Health"
+    }
+  ]
+}

@@ -1,51 +1,51 @@
 import React, { Component } from 'react';
 import colorbrewer from 'colorbrewer';
-import statesJson from './states.json';
-import Map from './Map';
-import StepSlider from './StepSlider';
 import './App.css';
 import styled from 'styled-components';
-
-function randint(end) {
-  return Math.floor(Math.random() * end);
-}
-
-const colors = colorbrewer.Blues[9];
+import Chips from './Chips';
+import Top3Criteria from './Top3Criteria';
+import TimeSlice from './TimeSlice';
 
 class App extends Component {
   state = {
-    stateId: null,
-    value: 6,
-    minValue: 1,
-    maxValue: 12,
+    pageIdx: 1,
+    pages: [<Top3Criteria/>, <TimeSlice/>, <></>],
   }
 
   render() {
+
     return (
       <div className="App">
-        {/* <img src={us2} alt="us map" /> */}
-        <Map 
-          colors={{}}
-          onMouseOverState={stateId => this.setState({ stateId })}
-          onMouseOutState={_ => this.setState({ stateId: null })}
+        <Chips
+          items={['Top 3 Criteria', 'Time Slice', 'Case Studies - Hurricane']}
+          onClick={pageIdx => this.setState({ pageIdx })}
+          selectedItemId={this.state.pageIdx}
         />
-        <SliderContainer>
-          <SliderStartLabel>January</SliderStartLabel>
-          <StepSlider
-            value={this.state.value}
-            minValue={this.state.minValue}
-            maxValue={this.state.maxValue}
-            onSlide={(_, value) => this.setState({ value })}
-          />
-          <SliderEndLabel>December</SliderEndLabel>
-        </SliderContainer>
-        <div>
-          {this.state.stateId}
-        </div>
+        {this.state.pages[this.state.pageIdx]}
       </div>
     );
   }
 }
+
+
+const Panel = styled.div`
+  background: white;
+  box-shadow: 4px 13px 27px -5px rgba(50,50,93,.25), 4px 8px 16px -8px rgba(0,0,0,.3), 4px -6px 16px -6px rgba(0,0,0,.025);
+  font-family: 'Lato', serif;
+  font-weight: 700;
+  height: 450px;
+  padding: 18px;
+  position: fixed;
+  right: 3%;
+  text-align: left;
+  top: 60px;
+  width: 300px;
+`;
+
+const MapContainer = styled.div`
+  margin: 0 3%;
+  width: 70%;
+`;
 
 const SliderStartLabel = styled.div`
   position: absolute;
