@@ -3,8 +3,10 @@ import top3Criteria from './top3_criteria.json';
 import StaticMap from './StaticMap';
 import './App.css';
 import styled from 'styled-components';
-import snowstorm from './snowstorm.png';
-import hurricane from './hurricane.png';
+import snowstorm1 from './snowstorm1.png';
+import snowstorm2 from './snowstorm2.png';
+import hurricane1 from './hurricane1.png';
+import hurricane2 from './hurricane2.png';
 
 class CaseStudies extends Component {
   state = {
@@ -36,12 +38,14 @@ class CaseStudies extends Component {
         <Title>Case Studies: Disproportionate Mental Health Effects of Natural Disasters on Vulnerable Groups</Title>
         {this.state.showFloridaModal && (
           <Panel>
-            <img src={hurricane} alt={'hurricane'} />
+            <img src={hurricane1} alt={'hurricane'} />
+            <img src={hurricane2} alt={'hurricane'} />
           </Panel>
         )}
         {this.state.showNortheastModal && (
           <Panel>
-            <img src={snowstorm} alt={'snowstorm'} />
+            <img src={snowstorm1} alt={'snowstorm'} />
+            <img src={snowstorm2} alt={'snowstorm'} />
           </Panel>
         )}
 
@@ -91,10 +95,10 @@ const Panel = styled.div`
   font-weight: 400;
   position: absolute;
   width: 65%;
-  height: 480px;
+  height: 520px;
   left: 50%;
   transform: translateX(-50%);
-  // overflow: scroll;
+  overflow: scroll;
 
   img {
     width: 100%;
