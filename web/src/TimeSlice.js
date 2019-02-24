@@ -25,7 +25,7 @@ class TimeSlice extends Component {
   }
 
   render() {
-    const stateScores = timeSliceJson[this.state.month];
+    const stateScores = timeSliceJson[this.state.month ];
     let colors = {};
     for (let state of Object.keys(stateScores)) {
       colors[state] = this.state.colorPalette[Math.floor(stateScores[state])];
@@ -37,7 +37,7 @@ class TimeSlice extends Component {
         <Title>Monthly Changes in Number of Days with Poor Mental Health Across States</Title>
         <Panel>
           <PanelLabel>
-            {this.state.stateName} <PanelLabelMin> in </PanelLabelMin> {this.state.monthLabels[this.state.month]}
+            {this.state.stateName} <PanelLabelMin> in </PanelLabelMin> {this.state.monthLabels[this.state.month - 1]}
           </PanelLabel>
           <PanelScore>
             {Number(stateScores[this.state.stateName]).toFixed(2)} days
@@ -73,8 +73,8 @@ const Title = styled.div`
   font-weight: 700;
   font-size: 24px;
   box-shadow: 4px 13px 27px -5px rgba(50,50,93,.25), 4px 8px 16px -8px rgba(0,0,0,.3), 4px -6px 16px -6px rgba(0,0,0,.025);
-  margin: 24px auto;
-  padding: 18px;
+  margin: 20px auto;
+  padding: 14px;
   width: 75%;
 `;
 
